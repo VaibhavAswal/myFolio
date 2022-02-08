@@ -3,9 +3,9 @@
 
 Dynamic Responsive portfolio template made with express.
 
+![App Screenshot](https://raw.githubusercontent.com/VaibhavAswal/myFolio/main/public/assets/img/ezgif.com-gif-maker2.gif)
 
 
-![App Screenshot](https://raw.githubusercontent.com/VaibhavAswal/myFolio/main/public/assets/img/ezgif.com-gif-maker.gif)
 
 
 ## Tech Stack 
@@ -102,4 +102,4 @@ Please adhere to this project's `code of conduct`.
 
 [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/)
 
-![App Screenshot](https://raw.githubusercontent.com/VaibhavAswal/myFolio/main/public/assets/img/ezgif.com-gif-maker2.gif)
+![App Screenshot](https://raw.githubusercontent.com/VaibhavAswal/myFolio/main/public/assets/img/ezgif.com-gif-maker.gif)
