@@ -16,7 +16,7 @@ Dynamic Responsive portfolio template made with express.
 
 **External Resources used:** [ScrollRevealJs](https://github.com/jlmakes/scrollreveal), [MixItup](https://github.com/patrickkunka/mixitup/), [SwiperJs](https://github.com/nolimits4web/swiper)
 
-**Degign Idea:** [bedimcode](https://github.com/bedimcode/responsive-portfolio-website-Ansel)
+**Design Idea:** [bedimcode](https://github.com/bedimcode/responsive-portfolio-website-Ansel)
 
 
 
