@@ -1,0 +1,322 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // =============== FAVICON ===============
+  link(rel='apple-touch-icon' sizes='180x180' href='assets/img/favicon_io/apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='assets/img/favicon_io/favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='assets/img/favicon_io/favicon-16x16.png')
+  link(rel='manifest' href='assets/img/favicon_io/site.webmanifest')
+
+  // =============== BOXICONS ===============
+  link(href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet')
+  // =============== SWIPER CSS ===============
+  link(rel='stylesheet' href='assets/css/swiper-bundle.min.css')
+  // =============== CSS ===============
+  link(rel='stylesheet' href='assets/css/styles.css')
+  script(src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js")
+
+  title  Vaibhav Aswal | Portfolio 
+// =============== HEADER ===============
+header#header.header.transHead
+  nav.nav.container
+    a.nav__logo(href='#') Vaibhav
+    .nav__menu
+      ul.nav__list
+        li.nav__item
+          a.nav__link.active-link(onclick="goTo('home'); return false;" href='#home')
+            i.bx.bx-home-alt
+        li.nav__item
+          a.nav__link(onclick="goTo('about'); return false;" href='#about')
+            i.bx.bx-user
+        li.nav__item
+          a.nav__link(onclick="goTo('skills'); return false;" href='#skills')
+            i.bx.bx-trophy
+        li.nav__item
+          a.nav__link(onclick="goTo('work'); return false;" href='#work')
+            i.bx.bx-briefcase-alt
+        li.nav__item
+          a.nav__link(onclick="goTo('contact'); return false;" href='#contact')
+            i.bx.bx-message-square
+    // Theme change button
+    i#theme-button.bx.bx-moon.change-theme
+i.bx.bx-moon.change-theme
+a.nav__logo2(href='#') Vaibhav
+// =============== MAIN ===============
+main.main
+  // =============== HOME ===============
+  section#home.home
+    .home__container.container.grid
+      .home__data
+        span.home__greeting Hello, I&apos;m
+        h1.home__name Vaibhav Aswal
+        h3.home__education FullStack Developer
+        .home__buttons
+          a.button.button--ghost(href='assets/pdf/resume.pdf')
+            | View CV
+          a.button(onclick="goTo('about');") About me
+      .home__handle
+        lottie-player(src='https://assets4.lottiefiles.com/packages/lf20_0bptkpmg.json' background='transparent' speed='1' style='width: 300px; height: 300px;' loop='' autoplay='')
+      .home__social
+        a.home__social-link(href='https://github.com/VaibhavAswal' target='_blank')
+          i.bx.bxl-github
+        a.home__social-link(href='https://www.instagram.com/that_back.bencher' target='_blank')
+          i.bx.bxl-instagram
+        a.home__social-link(href='https://twitter.com/vaibhav_says' target='_blank')
+          i.bx.bxl-twitter
+      a.home__scroll(onclick="goTo('about');")
+        i.bx.bx-mouse.home__scroll-icon
+        span.home__scroll-name Scroll Down
+  // =============== ABOUT ===============
+  section#about.about.section
+    span.section__subtitle My Intro
+    h2.section__title About Me
+    .about__container.container.grid
+      img.about__img(src='assets/img/about.jpg' alt='')
+      .about__data
+        .about__info
+          .about__box
+            i.bx.bx-award.about__icon
+            h3.about__title Experience
+            span.about__subtitle 2+ Years
+          .about__box
+            i.bx.bx-briefcase-alt.about__icon
+            h3.about__title Completed
+            span.about__subtitle 5+ Projects
+          .about__box
+            i.bx.bxl-snapchat.about__icon
+            h3.about__title SnapScore
+            span.about__subtitle 95,000+
+        p.about__description
+          | FullStack developer, create endpoint deployable applications with high
+          | scalability. Experienced with mongoDB, Express.js, React.js, Node.js, C++,
+          | Python, C, JavaScript, Flask, &amp; stackOverflow se CopyPaste krne me.
+        a.button(onclick="goTo('contact');") Contact Me
+  // =============== SKILLS ===============
+  section#skills.skills.section
+    span.section__subtitle My abilities
+    h2.section__title My Experience
+    .skills__container.container.grid
+      .skills__content
+        h3.skills__title Fontend
+        .skills__box
+          .skills__groups
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name HTML
+                span.skills__level Expert
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name CSS
+                span.skills__level Expert
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name JavaScript
+                span.skills__level Intermediate
+          .skills__groups
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name Git
+                span.skills__level Expert
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name React
+                span.skills__level Beginner
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name React Native
+                span.skills__level Beginner
+      .skills__content
+        h3.skills__title Backend
+        .skills__box
+          .skills__groups
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name Node JS
+                span.skills__level Intermediate
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name Flask
+                span.skills__level Intermediate
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name MySQL
+                span.skills__level Intermediate
+          .skills__groups
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name Firebase
+                span.skills__level Beginner
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name Python
+                span.skills__level Intermediate
+            .skills__data
+              i.bx.bxs-badge-check
+              div
+                h3.skills__name C++
+                span.skills__level Intermediate
+    // =============== WORK ===============
+  section#work.work.section
+    span.section__subtitle My Portfolio
+    h2.section__title Recent Works
+    .work__filters
+      span.work__item.active-work(data-filter='all') All
+      span.work__item(data-filter='.web') Web
+      span.work__item(data-filter='.android') Android
+      span.work__item(data-filter='.robotics') Robotics
+    .work__container.container.grid
+      .work__card.mix.web
+        img.work__img(src='https://raw.githubusercontent.com/VaibhavAswal/ImageColoriser/main/images/ezgif-5-05a708c1ee.gif' alt='')
+        h3.work__title Image Coloriser
+        p.work__subtitle Converts Black and White images into Colored using API from deepai.org
+        .wbtn
+          a.work__button(href='https://coloriser.vaibhavaswal.codes')
+            | Demo 
+            i.bx.bx-right-arrow-alt.work__icon
+          a.work__button(href='https://github.com/VaibhavAswal/ImageColoriser')
+            | More 
+            i.bx.bx-right-arrow-alt.work__icon
+      .work__card.mix.web
+        img.work__img(src='https://raw.githubusercontent.com/VaibhavAswal/toDoApp/main/images/ezgif.gif' alt='')
+        h3.work__title To Do App
+        p.work__subtitle
+          | Responsive to-do application with permanent local storage and weather functionality&quot;
+        .wbtn
+          a.work__button(href='https://vaibhavaswal.github.io/toDoApp/')
+            | Demo 
+            i.bx.bx-right-arrow-alt.work__icon
+          a.work__button(href='https://github.com/VaibhavAswal/toDoApp')
+            | More 
+            i.bx.bx-right-arrow-alt.work__icon
+  .fll
+    a.button(href='/projects') More Projects
+  // =============== TESTIMONIALS ===============
+  section#testimonial.testimonial.section
+    span.section__subtitle My clients say
+    h2.section__title Testimonial
+    .testimonial__container.container.swiper
+      .swiper-wrapper
+        .testimonial__card.swiper-slide
+          img.testimonial__img(src='assets/img/testimonial(4).png' alt='')
+          h3.testimonial__name Shubham Maurya
+          p.testimonial__description
+            | Literally, i was not expecting but after he finished the project i was blown away...
+        .testimonial__card.swiper-slide
+          img.testimonial__img(src='assets/img/testimonial(5).png' alt='')
+          h3.testimonial__name Ishika Mamgain
+          p.testimonial__description
+            | Very limited time was left for the deadline but Vaibhav finished it on time
+        .testimonial__card.swiper-slide
+          img.testimonial__img(src='assets/img/testimonial(1).png' alt='')
+          h3.testimonial__name Suraj Manwal
+          p.testimonial__description
+            | Bete moj krdi. Waah bete waah Moj krdi
+        .testimonial__card.swiper-slide
+          img.testimonial__img(src='assets/img/testimonial(2).png' alt='')
+          h3.testimonial__name Lokesh Rawat
+          p.testimonial__description
+            | Expecting to work together again. It fun working with you, learned a lot of things
+        .testimonial__card.swiper-slide
+          img.testimonial__img(src='assets/img/testimonial(3).png' alt='')
+          h3.testimonial__name Mr. A.J Vishwkarma
+          p.testimonial__description
+            | This bro Rocks🤘  My google for all my questions. He helps me a lot, Thankyou...
+      .swiper-pagination
+  // =============== CONTACT ===============
+  section#contact.contact.section
+    span.section__subtitle Get in touch
+    h2.section__title Contact Me
+    .contact__container.container.grid
+      .contact__content
+        h3.contact__title Talk to me
+        .contact__info
+          .contact__card
+            i.bx.bx-mail-send.contact__card-icon
+            h3.contact__card-title Email
+            span.contact__card-data mail@vaibhavaswal.codes
+            a.contact__button(href='mailto:mail@vaibhavaswal.codes' target='_blank')
+              | write me 
+              i.bx.bx-right-arrow-alt.contact__button-icon
+          .contact__card
+            i.bx.bxl-snapchat.contact__card-icon
+            h3.contact__card-title snapchat
+            span.contact__card-data VaibhavAswal
+            a.contact__button(href='' target='_blank')
+              | write me 
+              i.bx.bx-right-arrow-alt.contact__button-icon
+          .contact__card
+            i.bx.bxl-whatsapp.contact__card-icon
+            h3.contact__card-title WhatsApp
+            span.contact__card-data (kindly mail or SC)
+            a.contact__button(href='' target='_blank')
+              | write me 
+              i.bx.bx-right-arrow-alt.contact__button-icon
+      .contact__content
+        h3.contact__title Write me your thaughts
+        form.contact__form(action='')
+          .contact__form-div
+            label.contact__form-tag(for='') Name
+            input.contact__form-input(type='text' placeholder='Insert your name')
+          .contact__form-div
+            label.contact__form-tag(for='') Mail
+            input.contact__form-input(type='email' placeholder='Insert your email')
+          .contact__form-div.contact__form-area
+            label.contact__form-tag(for='') Message
+            textarea.contact__form-input(name='' id='' cols='30' rows='10' placeholder='Write your message')
+          button.button Send Message
+// =============== FOOTER ===============
+footer.footer
+  .footer__container.container
+    h1.footer__title Vaibhav
+    ul.footer__list
+      li
+        a.footer__link(onclick="goTo('about');") About
+      li
+        a.footer__link(onclick="goTo('work');") Projects
+      li
+        a.footer__link(onclick="goTo('testimonial');") Testimonial
+    ul.footer__social
+      a.footer__social-link(href='' target='_blank')
+        i.bx.bxl-instagram
+      a.footer__social-link(href='' target='_blank')
+        i.bx.bxl-github
+      a.footer__social-link(href='' target='_blank')
+        i.bx.bxl-snapchat
+
+
+    //////////////////////////////////////////////
+    //YOU ARE NOT ALLOWED TO REMOVE CREDIT LINKS//
+    /////////////////////////////////////////////
+    h2.footer__love
+      | Made with 
+      span(style='color: #e25555;') &hearts; 
+      | by 
+      a(href="https://instagram.com/that_back.bencher" target="_blank")
+        | Vaibhav Aswal 
+    //////////////////////////////////////////////
+    //YOU ARE NOT ALLOWED TO REMOVE CREDIT LINKS//
+    /////////////////////////////////////////////
+    
+    
+    span.footer__copy
+      |&copy; Vaibhav Aswal. All rights reserves
+// =============== SCROLLREVEAL ===============
+script(src='assets/js/scrollreveal.min.js')
+// =============== SWIPER JS ===============
+script(src='assets/js/swiper-bundle.min.js')
+// =============== MIXITUP FILTER ===============
+script(src='assets/js/mixitup.min.js')
+// =============== MAIN JS ===============
+script(src='assets/js/main.js')

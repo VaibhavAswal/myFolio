@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Dynamic portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaibhavAswal/portfolioWebsite.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website"
+  ],
+  "author": "vaibhav aswal",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/VaibhavAswal/portfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/VaibhavAswal/portfolioWebsite#readme",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "body-parse": "^0.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "pug": "^3.0.2"
+  }
+}

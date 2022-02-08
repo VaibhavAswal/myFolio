@@ -1,0 +1,85 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  // =============== FAVICON ===============
+  link(rel='shortcut icon' href='assets/img/favicon.png' type='image/x-icon')
+  // =============== BOXICONS ===============
+  link(href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet')
+  // =============== CSS ===============
+  link(rel='stylesheet' href='assets/css/styles.css')
+  title  Vaibhav Aswal | Portfolio 
+// =============== HEADER ===============
+header#header.header
+  nav.nav.container
+    a.nav__logo(href='#') Vaibhav
+    // Theme change button
+    i#theme-button.bx.bx-moon.change-theme
+// =============== MAIN ===============
+main.main
+  // =============== SKILLS ===============
+  section#skills.skills.section
+      h2.section__title All Projects
+      span.section__subtitle Fetched from git hub using github api
+      .skills__container.container.grid.pro
+        -for (i in repoInfo)
+          .skills__content 
+               h3.skills__title2= 'Project number ' + [++i]
+               p.skills__subtitle= 'Created on ' + repoInfo[--i]['created_at']
+                .skills__box
+                  .skills__groups2
+                      .skills__data
+                          i.bx.bx-code-curly
+                          div.projects
+                            h3.skills__name Name
+                            span.skills__level2= repoInfo[i]['name']
+                      .skills__data
+                          i.bx.bx-code-curly
+                          div.projects
+                            h3.skills__name Demo
+                            a.skills__level2(href= repoInfo[i]['homepage'] target="_blank") Click here
+                      .skills__data
+                          i.bx.bx-code-curly
+                          div.projects
+                            h3.skills__name More info
+                            a.skills__level2(href= repoInfo[i]['html_url'] target="_blank") Click Here
+                  .skills__groups2
+                      .skills__data
+                          i.bx.bx-code-curly
+                          div.projects
+                            h3.skills__name Licence
+                            a.skills__level2(href= "https://google.com/search?q=" + repoInfo[i]['license']['name'] target="_blank")=repoInfo[i]['license']['spdx_id']
+                      .skills__data
+                          i.bx.bx-code-curly
+                          div.projects
+                            h3.skills__name Stars
+                            span.skills__level= repoInfo[i]['stargazers_count']
+                      .skills__data
+                          i.bx.bx-code-curly
+                          div.projects
+                            h3.skills__name Language
+                            span.skills__level= repoInfo[i]['language']
+// =============== FOOTER ===============
+footer.footer
+  .footer__container.container
+    h1.footer__title Vaibhav
+    ul.footer__list
+      li
+        a.footer__link(onclick="goTo('about');") About
+      li
+        a.footer__link(onclick="goTo('work');") Projects
+      li
+        a.footer__link(onclick="goTo('testimonial');") Testimonial
+    ul.footer__social
+      a.footer__social-link(href='' target='_blank')
+        i.bx.bxl-instagram
+      a.footer__social-link(href='' target='_blank')
+        i.bx.bxl-github
+      a.footer__social-link(href='' target='_blank')
+        i.bx.bxl-snapchat
+    span.footer__copy
+      | &copy; Vaibhav Aswal. All rights reserves
+// =============== SCROLLREVEAL ===============
+script(src='assets/js/scrollreveal.min.js')
+// =============== MAIN JS ===============
+script(src='assets/js/mainProjects.js')
