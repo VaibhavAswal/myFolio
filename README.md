@@ -92,6 +92,7 @@ You can store your files at /public from where your can dierectly link them in p
 Contributions are always welcome!
 
 You can create requests on dev branch
+Feel Free to Contribute
 
 Please adhere to this project's `code of conduct`.
 
