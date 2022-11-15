@@ -1,6 +1,7 @@
 
-#  MyFolio Portfolio Template [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 
+#  MyFolio Portfolio Template [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
+# Give Credits
 Dynamic Responsive portfolio template made with express. [Live preview](https://portfoliowebsite2002.herokuapp.com/)
 
 ![App Screenshot](https://raw.githubusercontent.com/VaibhavAswal/myFolio/main/public/assets/img/ezgif.com-gif-maker2.gif)
