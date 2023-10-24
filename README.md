@@ -1,40 +1,34 @@
+# MyFolio Portfolio Template
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-#  MyFolio Portfolio Template [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
-# Give Credits
-Dynamic Responsive portfolio template made with express. [Live preview](https://vaibhavaswal.github.io/)
+A dynamic and responsive portfolio template built with Express.
+
+👉 [Live Preview](https://vaibhavaswal.github.io/)
 
 ![App Screenshot](https://raw.githubusercontent.com/VaibhavAswal/myFolio/main/public/assets/img/ezgif.com-gif-maker2.gif)
 
+## 🚀 Tech Stack
 
+- **Server:** Node, Express
+- **Templating Engine:** pug
+- **External Resources used:**
+  - [ScrollRevealJs](https://github.com/jlmakes/scrollreveal)
+  - [MixItup](https://github.com/patrickkunka/mixitup/)
+  - [SwiperJs](https://github.com/nolimits4web/swiper)
+- **Design Inspiration:** [bedimcode](https://github.com/bedimcode/responsive-portfolio-website-Ansel)
 
+## ✨ Features
 
-## Tech Stack 
+- 📂 Dynamic: Automatically fetch projects from your GitHub repositories
+- 📱 Responsive: Designed for devices of all sizes
+- 🌓 Light/Dark theme toggle
+- 🎈 Lightweight
+- 🚀 [Demo](https://vaibhavaswal.github.io/)
 
-**Server:** Node, Express
+## 💡 How to Use
 
-**Templating Engine:** pug
-
-**External Resources used:** [ScrollRevealJs](https://github.com/jlmakes/scrollreveal), [MixItup](https://github.com/patrickkunka/mixitup/), [SwiperJs](https://github.com/nolimits4web/swiper)
-
-**Design Idea:** [bedimcode](https://github.com/bedimcode/responsive-portfolio-website-Ansel)
-
-
-
-
-
-## Features
-
-- Dynamic (Automatically fetch projects from your git hub repositories)
-- Responsive | designed for devices of all siges
-- Light/Dark theme
-- Light weight
-- For demo [click here](https://vaibhavaswal.github.io/)
-
-
-# How to use
-
-### Run locally
+### **Run Locally**
 
 Clone the project
 
@@ -60,7 +54,6 @@ Start the server
   npm run start
 ```
 
-
 ### Cutomise
 
 **To fetch projects from your Github**
@@ -70,8 +63,8 @@ Credential are stored in Config.js edit it with your Github token and username
 ```javascript
 let config = {};
 
-config.githubToken = 'YOUR GITHUB TOKEN HERE';
-config.githubUsername = 'YOUR USERNAME HERE';
+config.githubToken = "YOUR GITHUB TOKEN HERE";
+config.githubUsername = "YOUR USERNAME HERE";
 
 module.exports = config;
 ```
@@ -85,9 +78,6 @@ Index is static and projects is dynamic. You can edit both according to your nee
 
 You can store your files at /public from where your can dierectly link them in pug using. You can see linked css files in the projects for example
 
-
-
-
 ## Contributing
 
 Contributions are always welcome!
@@ -96,7 +86,6 @@ You can create requests on dev branch
 Feel Free to Contribute
 
 Please adhere to this project's `code of conduct`.
-
 
 ## Authors
 
